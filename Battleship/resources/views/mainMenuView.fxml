@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.MainMenuController"
+      alignment="CENTER" spacing="10"
+      prefHeight="800" prefWidth="600.0">
+
+    <padding>
+        <Insets top="10" bottom="10" left="10" right="10"/>
+    </padding>
+
+    <stylesheets>
+        <URL value="@../stylesheets/mainMenuStyling"/>
+    </stylesheets>
+
+    <Label text="super logo" translateY="-150"/>
+    <Button text="New Game" prefWidth="Infinity" prefHeight="75" onAction="#btnNewGameHandler"/>
+    <Button text="Continue" prefWidth="Infinity" prefHeight="75" onAction="#btnContinueHandler"/>
+    <Button text="Info" prefWidth="Infinity" prefHeight="75" onAction="#btnInfoHandler"/>
+</VBox>

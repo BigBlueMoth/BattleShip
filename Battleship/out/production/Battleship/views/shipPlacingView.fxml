@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.ShipPlacingController"
+      prefHeight="800" prefWidth="800" alignment="CENTER" spacing="10">
+
+    <stylesheets>
+        <URL value="@../stylesheets/shipPlacingStyling.css"/>
+    </stylesheets>
+
+    <Label fx:id="lblCurrentPlayer"/>
+
+    <HBox fx:id="mainHBox" translateY="25">
+        <VBox translateY="25">
+            <HBox alignment="CENTER">
+                <Button fx:id="btnShip1" onAction="#btnShipHandler"/>
+                <Label fx:id="lblShip1count"/>
+            </HBox>
+            <HBox alignment="CENTER">
+                <Button fx:id="btnShip2" onAction="#btnShipHandler"/>
+                <Label fx:id="lblShip2count"/>
+            </HBox>
+            <HBox alignment="CENTER">
+                <Button fx:id="btnShip3" onAction="#btnShipHandler"/>
+                <Label fx:id="lblShip3count"/>
+            </HBox>
+            <HBox alignment="CENTER">
+                <Button fx:id="btnShip4" onAction="#btnShipHandler"/>
+                <Label fx:id="lblShip4count"/>
+            </HBox>
+        </VBox>
+    </HBox>
+
+    <HBox alignment="CENTER" translateY="30" spacing="10">
+        <Button text="Finish"/>
+        <Button text="Reset Board" onAction="#btnResetBoardHandler"/>
+        <Button text="Randomize" onAction="#btnRandomizeHandler"/>
+        <Button text="Cancel" onAction="#btnCancelHandler"/>
+    </HBox>
+
+</VBox>

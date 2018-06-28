@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import java.net.URL?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.GameSettingsController"
+      alignment="CENTER" spacing="10"
+      prefHeight="800" prefWidth="600.0">
+
+    <!--<padding>-->
+        <!--<Insets top="10" bottom="10" left="10" right="10"/>-->
+    <!--</padding>-->
+
+    <stylesheets>
+        <URL value="@../stylesheets/gameSettingsStyling"/>
+    </stylesheets>
+
+
+    <VBox alignment="CENTER" spacing="5" translateY="110">
+        <Label text="Board Size" textFill="white" textAlignment="CENTER" prefWidth="250"/>
+        <ImageView fx:id="ship1">
+            <Image url="@../img/ship1.png"/>
+        </ImageView>
+        <ImageView fx:id="ship2">
+            <Image url="@../img/ship2.png"/>
+        </ImageView>
+        <ImageView fx:id="ship3">
+            <Image url="@../img/ship3.png"/>
+        </ImageView>
+        <ImageView fx:id="ship4">
+            <Image url="@../img/ship4.png"/>
+        </ImageView>
+        <CheckBox text="vs AI" fx:id="checkBoxAI" onAction="#checkBoxHandler"/>
+        <Button text="Start" prefWidth="260" onAction="#btnStartHandler"/>
+    </VBox>
+
+    <VBox alignment="CENTER" spacing="5" translateY="110">
+        <HBox alignment="CENTER">
+            <Button text="sub" fx:id="btnSubGridSize" onAction="#btnSubHandler"/>
+            <TextField fx:id="txtFieldGridSize" editable="false"/>
+            <Button text="add" fx:id="btnAddGridSize" onAction="#btnAddHandler"/>
+        </HBox>
+        <HBox alignment="CENTER">
+            <Button text="sub" fx:id="btnSubOneFlag" onAction="#btnSubHandler"/>
+            <TextField fx:id="txtFieldOneFlagCount" editable="false"/>
+            <Button text="add" fx:id="btnAddOneFlag" onAction="#btnAddHandler"/>
+        </HBox>
+        <HBox alignment="CENTER">
+            <Button text="sub" fx:id="btnSubTwoFlag" onAction="#btnSubHandler"/>
+            <TextField fx:id="txtFieldTwoFlagCount" editable="false"/>
+            <Button text="add" fx:id="btnAddTwoFlag" onAction="#btnAddHandler"/>
+        </HBox>
+        <HBox alignment="CENTER">
+            <Button text="sub" fx:id="btnSubThreeFlag" onAction="#btnSubHandler"/>
+            <TextField fx:id="txtFieldThreeFlagCount" editable="false"/>
+            <Button text="add" fx:id="btnAddThreeFlag" onAction="#btnAddHandler"/>
+        </HBox>
+        <HBox alignment="CENTER">
+            <Button text="sub" fx:id="btnSubFourFlag" onAction="#btnSubHandler"/>
+            <TextField fx:id="txtFieldFourFlagCount" editable="false"/>
+            <Button text="add" fx:id="btnAddFourFlag" onAction="#btnAddHandler"/>
+        </HBox>
+        <CheckBox text="vs Player" fx:id="checkBoxPlayer" onAction="#checkBoxHandler"/>
+        <Button text="Cancel" prefWidth="260" onAction="#btnCancelHandler"/>
+    </VBox>
+</HBox>

@@ -1,0 +1,52 @@
+.root {
+    -fx-background-image: url("../img/background.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-size: 100%;
+}
+
+
+.root EmptyField {
+    -fx-image: url(/img/empty_field.png);
+    -fx-opacity: 0.6;
+}
+
+.button {
+    -fx-opacity: 0.8;
+}
+
+.button:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 1;
+}
+
+#btnShip1 {
+    -fx-background-image: url("../img/ship1.png");
+    -fx-background-size: 100%;
+    -fx-background-repeat: stretch;
+    -fx-pref-width: 60;
+    -fx-pref-height: 60;
+}
+
+#btnShip2 {
+    -fx-background-image: url("../img/ship2.png");
+    -fx-background-size: 100%;
+    -fx-background-repeat: stretch;
+    -fx-pref-width: 120;
+    -fx-pref-height: 60;
+}
+
+#btnShip3 {
+    -fx-background-image: url("../img/ship3.png");
+    -fx-background-size: 100%;
+    -fx-background-repeat: stretch;
+    -fx-pref-width: 180;
+    -fx-pref-height: 60;
+}
+
+#btnShip4 {
+    -fx-background-image: url("../img/ship4.png");
+    -fx-background-size: 100%;
+    -fx-pref-width: 240;
+    -fx-pref-height: 60;
+}

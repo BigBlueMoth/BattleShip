@@ -1,0 +1,9 @@
+.root EmptyField {
+    -fx-image: url(/img/empty_field.png);
+    -fx-opacity: 0.6;
+}
+
+.root EmptyField:hover {
+    -fx-opacity: 1;
+    -fx-cursor: hand;
+}
